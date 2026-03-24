@@ -1,14 +1,15 @@
 package com.example.Transaction_Management.Entity;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
+@JsonPropertyOrder({"loanAccountNumber", "dueDate", "emiAmount"})
 public class Loan {
 
     @Id
     private String loanAccountNumber;
-
     private String dueDate;
     private double emiAmount;
 

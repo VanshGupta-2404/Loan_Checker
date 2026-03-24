@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TransactionManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TransactionManagementApplication.class, args);
+
+        SpringApplication.run(TransactionManagementApplication.class, args);
 	}
 
 }
